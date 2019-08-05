@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <!--<link rel = "stylesheet" href = "css/form.css" type = "text/css">-->
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Login Page</legend>
+                <h3>Username:</h3> <br>
+                <input type = "text" name = "username"> <br>
+                <h3>Password</h3><br>
+                <input type = "password" name = "password"> <br> <br>
+                <h3>Select your birthday</h3>
+                <input type = "date" name = "bday" min = "1990-01-01" max = "2000-12-31">
+                <input type = "submit" name = "Log In"> <br>
+                <input type = "reset">
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Accounts</legend>
+                <select name = "accounts" size = 3 multiple>
+                    <option value="Google" selected>Google</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Instagram">Instagram</option>
+                </select>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Feedback</legend>
+                <textarea name = "feedback" row = "30" col = "10">
+                    Enter your feedback
+                </textarea>
+            </fieldset>
+            <button type = "button" onclick = "alert('Submitted successfully')">Submit</button>
+            <fieldset>
+                <legend>Using datalist tag</legend>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Choose your gender</legend>
+                <input type = "radio" name = "gender" value = "male">Male <br>
+                <input type="radio" name = "gender" value = "female">Female <br>
+                <input type="radio" name = "gender" value = "prefer not to say">Prefer not to say <br>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Choose your language</legend>
+                <input type="checkbox" name = "lang" value = "C" checked> C <br>
+                <input type="checkbox" name = "lang" value="C++">C++ <br>
+                <input type="checkbox" name = "lang" value="Java">Java <br>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Choose your laptop color</legend>
+                <input type = "color" name = "color">
+            </fieldset>
+            <hr>
+         </form> 
+    </body>
+</html>

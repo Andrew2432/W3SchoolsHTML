@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--This file is used for a quick refernce of various HTML tags-->
+<!--Only HTML tags are discussed. CSS is used iff its necessary-->
+<html lang = "en-US">   <!--lang denotes language of the webpage, which makes translating easier-->
+    <head>
+        <title>Learning through W3Schools</title>
+        <!--meta tag is used for SEO, data about webpage, etc.-->
+        <meta name = "description" content="Reference for HTML">
+        <meta charset="UTF-8">
+        <meta name = "keywords" content = "HTML, CSS, JS">
+        <!--Refresh page every 180 seconds-->
+        <meta http-equiv="refresh" content="180">
+        <meta name = "author" content="Andrew">
+        <!--viewport is important because it adjusts the webpage to the-->
+        <!--screen size of the device used-->
+        <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+        <!--The <base> element specifies the base URL and base target for all relative URLs in a page-->
+        <!--<base href = "E:\Web Designing\Project2" target = "_blank"> -->
+        <link href="css/style.css" rel="stylesheet" />
+        <!--Link for Google Icons-->
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
+        <!-- Open Sans font for document -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    </head>
+    <body>
+        
+        <!--
+            This is the navigation section
+            This is a horizontal list, controlled by CSS
+        -->
+        <div title = "Navigation" id = "top">
+            <p title = "navigation">
+                <h2>Navigation Pane</h2> <br>
+                <nav>
+                    <ol>
+                        <!-- <i class="material-icons">http</i> -->
+                        <li> <a href = "#one">Introduction </a></li> <br>
+                        <li> <a href = "#two">Formatting elements </a></li> <br>
+                        <li> <a href = "#three">Quotations and citaitions </a></li> <br>
+                        <li> <a href = "#four">Links </a></li><br>
+                        <li> <a href = "#five">Images </a></li><br>
+                        <li> <a href = "#six">Tables </a></li><br>
+                        <li> <a href = "#seven">Lists </a></li><br>
+                        <li> <a href="#eight">Frames </a></li><br>
+                        <li> <a href="#nine">JavaScript</a></li><br>
+                        <li> <a href="#ten">Computer code</a></li><br>
+                    </ol>
+                </nav>
+            </p>
+        </div>
+
+        <!--This division deals with introductory terms-->
+        <div title = "Introduction" id = "one">
+            <h1>Web Designing is easy</h1>
+            <p title = "Paragraph">
+                This is a paragraph.
+                It will always be formatted by web browsers.
+            </p>
+            <pre title= "Preformatted Text">
+                This text is formatted one.
+                This is called preformatted text.
+            </pre> 
+        </div>
+
+        <!--This division discusses different types of formatting tags used-->
+        <div title = "Formatting elements" id = "two">
+            <p title="Formatting elements" style = "font-size:10vw;">
+                <h2> <u>Formatting elements </u> </h2> <br>
+                <b>Bold text</b><br>
+                <strong>Strong text</strong> <br>
+                <i>Italic text</i> <br>
+                <em>Emphasize text</em> <br>
+                <mark>Marked text</mark> <br>
+                <small>Small text</small> <br>
+                <del>Deleted text</del> <br>
+                <ins>Inserted text</ins> <br>
+                <sub>Subscript text</sub> <br>
+                <sup>Superscript text</sup> 
+            </p>
+        </div>
+
+        <!--The following division discusses various quotations and citaitions tags used-->
+        <div title = "Quotations and Citations" id ="three">
+            <p title = "Quotations and Citations" style = "font-size:10vw;">
+                <h2><u>Quotations and Citations</u></h2><br>
+                <q>This is a short quotation.</q> <br>
+                <blockquote>
+                    This is a blockquote. 
+                    One of my favorite quote:
+                    "The <strong>brightest</strong> star appears in the <em>darkest</em> night."
+                </blockquote> <br>
+                This is an abbreviation for <abbr title = "You Live Only Once">YOLO</abbr> <br>This is the address element: <br>
+                <pre>
+                    <address>
+                    Flat No: C2,
+                    Melody Block,
+                    RC Queens Park,
+                    Madhavaram High Road,Chennai - 600 060.
+                    </address> 
+                </pre> <br>
+                This is a <cite>cite</cite> tag. <br>
+                This is a bidirectional override tag. I configured it to RTL direction. <br>
+                <bdo dir = "rtl">Read it if you can.</bdo> 
+            </p>
+        </div>
+
+        <!--This division is all about links-->
+        <!--For the purpose of linking, I created a sample HTML file :-->
+        <div title = "Links" id = "four">
+            <p title = "Links">
+                <h2><u>Links</u></h2><br>
+                Links division.<br>
+                Choose a link: <br>
+                <ul>
+                    <li> <a href = "#top">Top of page</a></li>
+                    <li> <a href = "#bottom">Bottom of page</a></li>
+                    <!--border:0 for avoiding displaying a border-->
+                    <li> <a href = "sample.html" target = "_blank"> <img src = "./images/image.jfif" alt = "Image as link" style = "border:0;" style = "width: 300px; height: 300px;">  </a> </li> 
+                    <li> <a href = "https://www.w3schools.com/html/html_links.asp" target = "_blank"> External link </a></li>
+                    <li> <a href = "sample.html" target = "sample">Go to sample </a></li>
+                </ul>
+            </p>
+        </div>
+
+        <!--This division deals about images-->
+        <div title = "Images" id = "five">
+            <p title = "Images">
+                <h2><u>Images</u></h2><br>
+                Animated gif: <br>
+                <a href = "https://tenor.com/view/animated-couple-gif-10757635" alt = "Animated gif" style = "width: 300px; height: 300px;"></a> <br>
+                <img src = "./images/smiley.jfif" alt = "Smiley face" style = "float: left; width: 200px; height: 200px;"> <br>
+                <img src = "./images/smiley.jfif" alt = "Smiley face" style = "float: right; width: 200px; height: 200px;"> <br>
+                <h3>Now we are dealing with image maps.</h3> <br>
+                <h3>We can select a portion of the image to be a link.</h3> <br>
+                <img src = "./images/coder.jfif" alt = "Coder" usemap = "#coder" style = "width: 300px; height:300px;">
+                <map name = "coder">
+                    <area shape = "rect" coords = "100,100,200,200" alt = "Computer" href = "sample.html">
+                </map>
+                <h3>Now we will see picture tag in action.</h3><br>
+                <picture>
+                    <!--Select one picture from below if browser window has enough space for it. Otherwise, go for other source-->
+                    <!--min-width specfies the range of image size available-->
+                    <source media = "(min-width: 600px") srcset = "./images/smiley.jfif">
+                    <source media = "(min-width: 400px") srcset = "./images/image.jfif">
+                    <!--img tag is used when no match for the above sources are available-->
+                    <img src = "coder.jfif" alt = "Coder" style  ="width:300px; height:300px;">
+                </picture>
+            </p><br>
+            <p title = "Background images" style = "background-image: url(./images/balloons/jfif)"></p><br
+        </div>  
+
+        <!--         
+        This section is all about tables
+        Styling of this table is done in style.css
+        overflow-x is used to make a horizontal scrollbar 
+        if table occupies more width
+         -->
+        <div title = "Tables" id = "six" style="overflow-x:auto">
+            <p title = "Tables">
+                <!--width:100% used for table area-->
+                <!-- <table style = "width:100%;"> -->
+                <table>
+                    <caption>Table of contents</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Place</th>
+                    </tr>
+                    <tr>
+                        <td>Andrew</td>
+                        <td>18</td>
+                        <td>Chennai</td>
+                    </tr>
+                    <tr>
+                        <td>Nishaanth</td>
+                        <td>18</td>
+                        <td>Chennai</td>
+                    </tr>
+                    <tr>
+                        <td>Livin</td>
+                        <td>18</td>
+                        <td>Krishnagiri</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+
+        <!--This section deals with lists-->
+        <div title = "List" id = "seven">
+            <p title = "List">
+                <h2><u>List</u></h2> <br>
+                <h4>Now I'm going to show you an ordered list</h4> <br>
+                <!--The different ol types are A, a, i, 1, I-->
+                <ol type = "A">
+                    <li>Tea</li>
+                    <li>Coffee</li>
+                    <li>Milk</li>
+                </ol> <br>
+                <h4>Now I'm going to show you an unordered list</h4>
+                
+                <!--                 
+                Use css property : list-style-type for ul
+                The different list-style-type are disc, circle, square, none 
+                -->
+                <ul style = "list-style-type: square">
+                    <li>Car</li>
+                    <li>Truck</li>
+                    <li>Motorcycle</li>
+                </ul> <br>
+                <h4>Now I'm going to show you a descriptive list</h4><br>
+                <dl>
+                    <dt><h5>Car</h5></dt>
+                    <dd>A four wheeled vehicle</dd>
+                    <dt>Truck</dt>
+                    <dd>A multiwheeled vehicle</dd>
+                </dl>
+            </p>
+        </div>
+
+       <!--This section deals inline frames--> 
+       <div title = "Frames" id = "eight">
+           <h2><u>Inline Frame</u></h2>
+           <iframe src = "sample.html" style = "height:200px;width:200px; border: none;" name = "sample">
+           </iframe>
+       </div>
+
+       <!-- 
+        This section deals with JavaScript
+        First statement then script 
+        -->
+
+       <div title = "JavaScript" id="nine">
+           <h2><u>JavaScript</u></h2><br>
+           <h3>Show Time</h3> <br>
+           <p id = 'Hello'>hi</p>
+           <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.
+            </button>
+            <p id="demo"></p> <br>
+            <script> 
+                document.getElementById('Hello').innerHTML = "Hello JavaScript" 
+            </script>
+            <noscript>
+                This content is displayed when scripting is disabled from cilent side.
+            </noscript>
+       </div>
+
+       <!--This section deals with computer code-->
+       <div title = "Computer code, Character entities" id = "ten">
+           <!--Used <pre> instead of <p> to preserve whitespaces and newlines-->
+               <h2>Computer code</h2> <br>
+           <pre style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+               <!--The <code> tag is used to describe computer code formats-->
+               <code>
+                   x = 4, y = 3.
+                   x + y = 7.
+               </code>
+               <!--<kbd> tag is used for keyboard input-->
+                To refresh this page, press <kbd>F5</kbd>
+               <!--<samp> tag is used for displaying outputs of programs-->
+                The program returned <samp>Success</samp> as the output.
+                <!--<var> tag is used for displaying variables-->
+                The speed of light is expressed using <var>c</var>.
+                <var>a</var> = <var>v</var>/<var>t</var>
+                To preserve whitespace between two words, we use nbsp preceded by an &.
+                Example : White&nbsp;space.
+                Refer <a href = "https://www.w3schools.com/html/html_entities.asp" target="_blank">this</a> website for more information.
+           </pre>
+       </div>
+
+       <!--
+           This division places a scroll to top box
+           which is styled by css
+       -->
+       <div title = "Scroll" id = "eleven">
+           <a href = "#top">Scroll to top</a>
+       </div>
+    </body>
+</html>

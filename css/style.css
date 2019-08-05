@@ -1,0 +1,143 @@
+/*  Universal selector  */
+/*  ------------------ */
+*{
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+}
+/*  ------------------ */
+
+h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+/*  Styling for links   */
+/* ------------------- */
+a:link, a:visited{
+    border: 2px solid black;
+    padding: 5px 5px;
+    margin: 2px;
+    background-color: blanchedalmond;
+    text-decoration: blue;
+    text-align: center;
+    display: inline-block;
+    cursor: default;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    text-decoration: blue;
+}
+/* ------------------- */
+
+/*  Styling for divisions   */
+/* ------------------- */
+#top{
+    background-color: antiquewhite ;
+}
+
+#one, #five, #seven, #nine{
+    background-color: paleturquoise;
+}
+
+#two, #four, #six, #eight, #ten{
+    background-color: whitesmoke;
+    padding: 5px;
+    margin: 5px;
+}
+/* ------------------- */
+
+/*  Styling lists   */
+/* ------------------- */
+ul{
+    background-color: indianred;
+    padding-top:5px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+ul li{
+    background-color: #ff9999;
+    list-style-position: inside;
+    padding: 5px;
+    margin-left:10px;
+}
+
+ol {
+    background-color: yellow;
+    padding: 5px 1px 5px 10px;
+}
+
+ol li{
+    background-color: burlywood;
+    list-style-position: inside;
+    padding: 5px;
+    margin-left:1px;
+}
+/* ------------------- */
+
+/*  Styling tables  */
+/* ------------------- */
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 10px;
+}
+
+th{
+    padding: 5px;
+    background-color: beige;
+    border: 2px solid black;
+}
+
+td{
+    padding: 5px;
+    border: 2px solid black;
+}
+
+tr:nth-child(even){
+    background-color: darkgrey;
+}
+
+tr:hover{
+    background-color: grey; 
+}
+
+caption{
+    caption-side: top;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+/* ------------------- */
+
+/*  Styling the scroll to top div   */
+/* ------------------- */
+#eleven{
+    font-size: 12px;    
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+/* ------------------- */
+
+/*  Styling the quotation block to include a vertical scrollbar */
+/* ------------------- */
+#three{
+    width:350px;
+    height:300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: paleturquoise;    
+}
